@@ -13,7 +13,8 @@ with open("./quiz.json") as datafile:
     data = json.load(datafile)
 
 print("Select one group to start your Quiz", "1. Sport    2. Maths", sep="\n")
-selected = input().lower()
+inputString = str(input())
+selected = inputString.lower()
 
 
 def que_function(sm_dict):
